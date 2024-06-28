@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-
+let price;
 app.get("/", async (req, res) => {
   const apiUrl = "https://api.binance.com/api/v3/ticker/price?symbol=BNBUSDT";
   try {
